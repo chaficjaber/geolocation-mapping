@@ -6,7 +6,7 @@ Display GPS info using (http://www.scriptr.io) & Google Maps API
 
 Live Mapping
 ============
-Using scriptr websockets & pubnub to receive the gps points, and google maps api to add new points to the MAP
+Using scriptr websockets & pubsub to receive the gps points, and google maps api to add new points to the MAP
 
 
 
