@@ -15,7 +15,15 @@ function fetch() {
 
 	var myArray = [["Latitude", "Longitude", "magnitude", "description", "location" , "date"]];
 	earthQuakeInfo.forEach(function(entry){
-       myArray.push([parseFloat(entry.latitude), parseFloat(entry.longitude), parseFloat(entry.magnitude), entry.title, entry.location, entry.date_time])
+       myArray.push(
+         [ parseFloat(entry.latitude),
+           parseFloat(entry.longitude),
+           parseFloat(entry.magnitude), 
+           entry.title, 
+           entry.location, 
+           entry.date_time
+         ]
+       );
 	});
 	return myArray;
 }

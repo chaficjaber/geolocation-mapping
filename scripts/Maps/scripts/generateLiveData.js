@@ -46,7 +46,6 @@ function generateRandomPoint(center, radius) {
   return {'lat': y+y0, 'lng': xp+x0};
 }
 
-
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)
  * Using Math.round() will give you a non-uniform distribution!
@@ -55,9 +54,8 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-// Generates 200 points that is in a 1km radius from the given lat and lng point.
-return publish ('pushMapData', generateRandomPoints({'lat':24.23, 'lng':23.12}, 100000, 200),false);
+// Generates 200 points that is in a 10km radius from the given lat and lng point.
+//return publish ('pushRandomData', generateRandomPoints({'lat':24.23, 'lng':23.12}, 10000, 200),false);
 
 // Generates 1 points that is in a 1km radius from the given lat and lng point.
-return publish ('pushMapData', generateRandomPoints({'lat':24.23, 'lng':23.12}, 1000, 200)[getRandomInt(0,200)],false);			
+return publish('pushRandomData', [generateRandomPoints({'lat':24.23, 'lng':23.12}, 1000, 200)[getRandomInt(0,200)]],false);			
