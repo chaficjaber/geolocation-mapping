@@ -1,18 +1,16 @@
-GPS MAPPING
-===========
+GeoLocation MAPPING
+===================
 
 Display GPS info using (http://www.scriptr.io) & Google Maps API
 
 
 Live Mapping
-============
+------------
 Using scriptr websockets & pubsub to receive the gps points, and google maps api to add new points to the MAP
 
 
-
-
 Static Mapping
-=============
+--------------
 Using scriptr rest api to fetch data, and google maps api to display points on map.
 
 This code can be reused to display any GPS map data. 
